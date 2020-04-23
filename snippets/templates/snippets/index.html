@@ -1,0 +1,23 @@
+{% extends 'snippets/base.html' %}
+
+{% block title %} Index {% endblock %}
+
+{% block content %}
+
+<!-- {% if name %}
+<h1>Hello, Code Snippete!</h1>
+{% else %} -->
+<h1>Hello, Stranger!</h1>
+<!-- {% endif %} -->
+
+{% if snippet_list %}
+<ul class="list-group">
+  {% for snippet in snippet_list %}
+  <li class="list-group-item">{{ snippet }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No snippets yet.</p>
+{% endif%}
+
+{% endblock %}
