@@ -4,10 +4,17 @@
 
 {% block content %}
 
-<h1>Add a Snippet.</h1>
+<div>
+  <h1>Add a Snippet</h1>
+  <div class="nav_buttons">
+    <button><a href="/">Home</a></button>
+    <button><a href="/add">Add Snippets</a></button>
+    <button><a href="/detail/1">View Details</a></button>
+  </div>
 
+</div>
 
-<form method="post" action="{% url 'snippets:add' %}">
+<form method="post" action="{% url 'snippets:add' %}" class="form">
 
   {% csrf_token %}
 
@@ -15,11 +22,13 @@
   <div class="form-group">
     {{ field.errors }}
 
-    {{ field.label_tag }} {{ field }}
+    {{ field.label_tag }}
+    {{ field }}
   </div>
   {% endfor %}
-
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="submit_button_container">
+    <button type="submit" class="submit_button">Submit</button>
+  </div>
 
 </form>
 

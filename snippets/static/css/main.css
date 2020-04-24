@@ -43,14 +43,19 @@ h1 {
 ul {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  /* margin: auto; */
+  /* width: 100%; */
+  margin: 20px;
+  padding: 0px;
 }
 
 li {
   background: white;
   padding: 13px;
   list-style: none;
-  width: 50%;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 table, th, td {
@@ -74,4 +79,52 @@ th {
 td {
   text-align: center;
   background: white;
+}
+
+.nav_buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+label {
+  width: 400px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 20px;
+  width: 95px;
+  font-size: 16px;
+  width: 135px;
+  border-radius: 5px;
+}
+
+.submit_button {}
+
+.submit_button_container {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

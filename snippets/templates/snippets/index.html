@@ -4,9 +4,16 @@
 
 {% block content %}
 
-<h1>Code Snippets</h1>
+<div>
+  <h1>Code Snippets</h1>
+  <div class="nav_buttons">
+    <button><a href="/">Home</a></button>
+    <button><a href="/add">Add Snippets</a></button>
+    <button><a href="/detail/1">View Details</a></button>
+  </div>
+</div>
 {% if snippet_list %}
-<ul class="list-group">
+<ul>
   {% for snippet in snippet_list %}
   <li class="list_item">{{ snippet }}</li>
   {% endfor %}
