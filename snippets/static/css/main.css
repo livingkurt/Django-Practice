@@ -1,0 +1,77 @@
+* {
+  font-family: futura;
+}
+
+body {
+  background: rgb(71, 125, 226);
+  background: linear-gradient(180deg, rgba(71, 125, 226, 1) 0%, rgba(109, 83, 141, 1) 45%, rgba(196, 48, 48, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+}
+
+.input {
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 7px;
+  border: 1px silver solid;
+  padding: 5px;
+}
+
+#submit_button {
+  width: 205px;
+  font-size: 20px;
+  border-radius: 7px;
+}
+
+#button_container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  background: white;
+  padding: 13px;
+  list-style: none;
+  width: 50%;
+  border-radius: 10px;
+}
+
+table, th, td {
+  color: black;
+  border-radius: 10px;
+}
+
+table {
+  border: 0px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 50px;
+  background: white;
+}
+
+td {
+  text-align: center;
+  background: white;
+}

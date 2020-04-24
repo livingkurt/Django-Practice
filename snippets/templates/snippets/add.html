@@ -1,4 +1,4 @@
-{% extends 'snippets/base.html' %}
+{% extends 'snippets/layout.html' %}
 
 {% block title %} Add {% endblock %}
 
@@ -6,7 +6,6 @@
 
 <h1>Add a Snippet.</h1>
 
-<hr>
 
 <form method="post" action="{% url 'snippets:add' %}">
 

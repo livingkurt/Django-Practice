@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIRS = [
+    "iSnippets/snippets/static"
+]
 
 # Application definition
 
